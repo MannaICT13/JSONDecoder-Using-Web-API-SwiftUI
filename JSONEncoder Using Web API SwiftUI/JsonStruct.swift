@@ -8,8 +8,9 @@
 
 import Foundation
 
-struct JsonStruct : Decodable{
+struct JsonStruct : Decodable , Identifiable{
     
+    let id = UUID()
     let name : String
     let capital : String
     let region : String

@@ -10,9 +10,32 @@ import SwiftUI
 
 struct ContentView: View {
     
+    @ObservedObject var allData = GetDataClass()
+    
     var body: some View {
         
-      Text("Hello World")
+        
+        
+        NavigationView{
+            
+            List(self.allData.getData){ value in
+                
+                VStack{
+                    
+                     Text(value.name)
+                     Text(value.capital)
+                     Text(value.region)
+                    
+                }
+               
+            }
+            
+            
+            
+            
+            .navigationBarTitle(Text("Conuntry Info "),displayMode: .inline)
+        }
+        
         
     }
 }

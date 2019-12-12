@@ -9,14 +9,16 @@
 import Foundation
 import UIKit
 import SwiftUI
+
 class GetDataClass : ObservableObject{
     
     @Published var getData = [JsonStruct]()
     
+    
     init(){
         
         
-        let url = URL(string: "https://restcountries.eu/rest/v2/all")
+        let url = URL(string:"https://restcountries.eu/rest/v2/all")
         
         URLSession.shared.dataTask(with: url!) { (data, response, error) in
             
@@ -24,13 +26,14 @@ class GetDataClass : ObservableObject{
                 
                 if error == nil{
                     
-                    self.getData = try JSONDecoder().decode([JsonStruct].self, from: data!)
+                  let data = try JSONDecoder().decode([JsonStruct].self, from: data!)
                     
                     DispatchQueue.main.async {
                         
                         for value in self.getData{
-                            print(value.name)
+                           print(value.name)
                         }
+                        self.getData = data
                     }
                 }
                 
@@ -41,7 +44,7 @@ class GetDataClass : ObservableObject{
                 print(error.localizedDescription)
             }
             
-        }
+        }.resume()
         
         
         
