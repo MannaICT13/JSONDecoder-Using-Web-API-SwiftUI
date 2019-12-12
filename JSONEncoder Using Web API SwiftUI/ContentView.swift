@@ -18,16 +18,27 @@ struct ContentView: View {
         
         NavigationView{
             
+            
             List(self.allData.getData){ value in
                 
-                VStack{
+                HStack(alignment: .center){
                     
-                     Text(value.name)
-                     Text(value.capital)
-                     Text(value.region)
-                    
+                    Spacer()
+                    VStack(alignment: .center,spacing: 5){
+                                      
+                                      Text(value.name)
+                                          .foregroundColor(Color.red)
+                                            
+                                       Text(value.capital)
+                                          .foregroundColor(Color.blue)
+                                       Text(value.region)
+                                          .foregroundColor(Color.green)
+                  
                 }
-               
+                    Spacer()
+              
+                }
+                
             }
             
             
