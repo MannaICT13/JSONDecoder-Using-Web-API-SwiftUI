@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct JsonStruct {
+struct JsonStruct : Decodable{
     
     let name : String
     let capital : String

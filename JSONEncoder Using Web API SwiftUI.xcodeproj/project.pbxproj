@@ -14,6 +14,7 @@
 		2A3EFF4923A2796300E9EF0E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A3EFF4823A2796300E9EF0E /* Preview Assets.xcassets */; };
 		2A3EFF4C23A2796300E9EF0E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A3EFF4A23A2796300E9EF0E /* LaunchScreen.storyboard */; };
 		2A3EFF5423A27F4A00E9EF0E /* JsonStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3EFF5323A27F4A00E9EF0E /* JsonStruct.swift */; };
+		2A3EFF5623A2800500E9EF0E /* GetDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3EFF5523A2800500E9EF0E /* GetDataClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		2A3EFF4B23A2796300E9EF0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2A3EFF4D23A2796300E9EF0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2A3EFF5323A27F4A00E9EF0E /* JsonStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonStruct.swift; sourceTree = "<group>"; };
+		2A3EFF5523A2800500E9EF0E /* GetDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetDataClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				2A3EFF4123A2795F00E9EF0E /* SceneDelegate.swift */,
 				2A3EFF4323A2795F00E9EF0E /* ContentView.swift */,
 				2A3EFF5323A27F4A00E9EF0E /* JsonStruct.swift */,
+				2A3EFF5523A2800500E9EF0E /* GetDataClass.swift */,
 				2A3EFF4523A2796300E9EF0E /* Assets.xcassets */,
 				2A3EFF4A23A2796300E9EF0E /* LaunchScreen.storyboard */,
 				2A3EFF4D23A2796300E9EF0E /* Info.plist */,
@@ -150,6 +153,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A3EFF4023A2795F00E9EF0E /* AppDelegate.swift in Sources */,
+				2A3EFF5623A2800500E9EF0E /* GetDataClass.swift in Sources */,
 				2A3EFF4223A2795F00E9EF0E /* SceneDelegate.swift in Sources */,
 				2A3EFF5423A27F4A00E9EF0E /* JsonStruct.swift in Sources */,
 				2A3EFF4423A2795F00E9EF0E /* ContentView.swift in Sources */,
